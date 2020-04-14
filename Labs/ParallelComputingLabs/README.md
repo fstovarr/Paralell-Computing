@@ -1,17 +1,17 @@
 # Blur effect
 
-En la presente carpeta encontrará diferentes implementaciones para aplicarle el filtro de blur effect a una imagen en distintos formatos, basados en un Kernel Gaussiano.
+In this project you will find different implementations of blur effect applied to images in several formats, based on Gaussian Kernel
 
-El directorio presenta la siguiente estructura:
+The directory presents the following structure:
 
 ```bash
 BlurrEfectPOSIX
 │   README.md
-│   ejecutar_todo.sh # Script para ejecutar test_bench
-|   test-bench.sh # Script para ejecutar test_bench
-|   plot.py # Script de python para realizar plots
-|   plot_seq.py # Script de python para realizar plots de la version secuencial
-|   Analysis.ipynb # Notebook de python demostrativo con del funcionamiento programa
+│   ejecutar_todo.sh # Script to run all test benchs
+|   test-bench.sh # Script to run a single test bench
+|   plot.py # Script de python to make plots
+|   plot_seq.py # Script de python to make plots of sequential version
+|   Analysis.ipynb # python notebook to show how the program works
 │
 └───BlurEffectSequential
 └───BlurEffectBlock
@@ -21,16 +21,16 @@ BlurrEfectPOSIX
 └───out
 ```
 
-En cada una de las carpetas con nombre BlurEffect\*, se encuentra la solución del problema siguiendo un paradigma distinto para la distribución del trabajo en hilos (secuencial, bloques, bloques-ciclos, thread-pool). A su vez, cada una de estas carpetas tiene la siguiente estructura:
+In each of the following folders with name BlurEffect\*, you will find the problems solution according to a different paradigm for threads work distribution (sequential, block, block-cyclic, thread-pool). In turn, each folder has this structure:
 
 ```bash
 BlurrEfect*
 │   README.md
 │   Makefile
-|   analysis4.txt # análisis realizado con la herramienta GProc
-└───bin # Directorio con el ejecutable
-└───lib # Directorio con las librerías usadas
-└───src # Directorio con el código fuente del programa
+|   analysis4.txt # Analysis performed with the tool GProc
+└───bin # Executables
+└───lib # Libraries
+└───src # Source code
 ```
 
 ## Build and run
